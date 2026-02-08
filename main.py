@@ -178,6 +178,10 @@ def main():
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     enemies = []
 
+    icon = rl.load_image(resource_path("assets/favicon.png"))
+    rl.set_window_icon(icon)
+    rl.unload_image(icon)
+    
     spawn_timer = _A
     bullet_damage = 20
     show_fps = False
