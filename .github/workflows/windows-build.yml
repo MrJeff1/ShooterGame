@@ -29,7 +29,7 @@ jobs:
       # 4️⃣ Build EXE
       - name: Build EXE
         run: |
-          pyinstaller --onefile main.py --name ShooterGame --add-data "assets;assets" --noconsole
+          pyinstaller --onefile main.py --name ShooterGame --add-data "assets;assets" --noconsole --icon assets/favicon.png
 
       # 5️⃣ Upload EXE as artifact
       - name: Upload EXE
